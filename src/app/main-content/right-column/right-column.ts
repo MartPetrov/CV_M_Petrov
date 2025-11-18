@@ -135,7 +135,7 @@ export class RightColumn {
         },
         {
           name: 'gradle',
-          icon: 'https://skillicons.dev/icons?i=gradle&theme=light',
+          icon: 'https://go-skill-icons.vercel.app/api/icons?i=gradle&theme=light',
         },
         {
           name: 'jenkins',
