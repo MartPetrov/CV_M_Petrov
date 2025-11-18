@@ -10,7 +10,7 @@
 
 .skills-grid{
   display: grid;
-  grid-template-columns: repeat(5, minmax(80px, 150px));
+  grid-template-columns: repeat(3, minmax(80px, 150px));
   row-gap: 5px;
   column-gap: 40px;
 }
