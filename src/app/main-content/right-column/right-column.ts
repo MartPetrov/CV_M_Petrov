@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class RightColumn {
   skills = [
     {
-      title: 'Back-end',
+      title: 'Technologies',
       items: [
         {
           name: 'Java',
@@ -20,8 +20,28 @@ export class RightColumn {
           icon: 'https://go-skill-icons.vercel.app/api/icons?i=spring&theme=light',
         },
         {
+          name: 'Angular',
+          icon: 'https://go-skill-icons.vercel.app/api/icons?i=angular&theme=light',
+        },
+        {
           name: 'Typescript',
           icon: 'https://go-skill-icons.vercel.app/api/icons?i=typescript&theme=light',
+        },
+        {
+          name: 'JavaScript',
+          icon: 'https://go-skill-icons.vercel.app/api/icons?i=js&theme=light',
+        },
+        {
+          name: 'Html',
+          icon: 'https://go-skill-icons.vercel.app/api/icons?i=html&theme=light',
+        },
+        {
+          name: 'CSS',
+          icon: 'https://go-skill-icons.vercel.app/api/icons?i=css&theme=light',
+        },
+        {
+          name: 'Tailwind',
+          icon: 'https://go-skill-icons.vercel.app/api/icons?i=tailwind&theme=light',
         },
       ],
     },
@@ -102,31 +122,6 @@ export class RightColumn {
       ],
     },
     {
-      title: 'Front-end',
-      items: [
-        {
-          name: 'Html',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=html&theme=light',
-        },
-        {
-          name: 'CSS',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=css&theme=light',
-        },
-        {
-          name: 'Tailwind',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=tailwind&theme=light',
-        },
-        {
-          name: 'JavaScript',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=js&theme=light',
-        },
-        {
-          name: 'Angular',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=angular&theme=light',
-        },
-      ],
-    },
-    {
       title: 'Build & Package',
       items: [
         {
@@ -151,16 +146,16 @@ export class RightColumn {
 
   sports = [
     {
-      title: "Running"
+      title: 'Running',
     },
-     {
-      title: "Volleyball"
+    {
+      title: 'Volleyball',
     },
-     {
-      title: "Boxing"
+    {
+      title: 'Boxing',
     },
-     {
-      title: "Swimming"
-    }
-  ]
+    {
+      title: 'Swimming',
+    },
+  ];
 }
