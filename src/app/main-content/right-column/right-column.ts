@@ -129,11 +129,11 @@ export class RightColumn {
           icon: 'https://go-skill-icons.vercel.app/api/icons?i=maven&theme=light',
         },
         {
-          name: 'gradle',
+          name: 'Gradle',
           icon: 'https://go-skill-icons.vercel.app/api/icons?i=gradle&theme=light',
         },
         {
-          name: 'jenkins',
+          name: 'Jenkins',
           icon: 'https://go-skill-icons.vercel.app/api/icons?i=jenkins&theme=light',
         },
         {

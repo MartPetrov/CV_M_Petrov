@@ -3,7 +3,7 @@ name: Deploy Angular App to GitHub Pages
 on:
   push:
     branches:
-      - main  # Пуска се автоматично при всеки push към main
+      - main 
 
 jobs:
   build-and-deploy:
@@ -28,4 +28,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist/cv_m_petrov/browser  # точният път към build
+          folder: dist/cv_m_petrov/browser  
