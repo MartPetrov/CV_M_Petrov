@@ -1,22 +1,23 @@
 .contact-info {
-    display: flex;
-    justify-content: space-around;
-    padding: 5px 0;
-    margin-top: 4px;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+  margin-top: 4px;
 }
 
 
 .links {
-    color: rgb(170, 167, 120);
+  color: #f8fafc;  
+  text-decoration: none;
 }
 
 
 .form {
-     display: flex;
+  display: flex;
 }
 
 
-/* From Uiverse.io by adamgiebl */ 
+/* From Uiverse.io by adamgiebl */
 button {
   font-family: inherit;
   font-size: 18px;
@@ -70,8 +71,8 @@ button:active {
 }
 
 @media (max-width: 768px) {
-  .contact-info{
+  .contact-info {
     flex-direction: column;
 
   }
- }
+}
