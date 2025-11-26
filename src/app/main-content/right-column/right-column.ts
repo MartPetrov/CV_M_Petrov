@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class RightColumn {
   skills = [
     {
-      title: 'Technologies',
+      title: 'Technologies and Libraries',
       items: [
         {
           name: 'Java',
@@ -18,9 +18,14 @@ export class RightColumn {
         {
           name: 'Spring',
           icon: 'Skills/Spring.svg',
-        },{
+        },
+        {
           name: 'Thymeleaf',
           icon: 'Skills/Thymeleaf.png',
+        },
+        {
+          name: 'Bootstrap',
+          icon: 'Skills/Bootstrap.png',
         },
         {
           name: 'Angular',
