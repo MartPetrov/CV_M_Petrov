@@ -13,35 +13,35 @@ export class RightColumn {
       items: [
         {
           name: 'Java',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=java&theme=light',
+          icon: 'Skills/Java.svg',
         },
         {
           name: 'Spring',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=spring&theme=light',
+          icon: 'Skills/Spring.svg',
         },
         {
           name: 'Angular',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=angular&theme=light',
+          icon: 'Skills/Angular.svg',
         },
         {
           name: 'Typescript',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=typescript&theme=light',
+          icon: 'Skills/TypeScript.svg',
         },
         {
           name: 'JavaScript',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=js&theme=light',
+          icon: 'Skills/JavaScript.svg',
         },
         {
           name: 'Html',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=html&theme=light',
+          icon: 'Skills/HTML.svg',
         },
         {
           name: 'CSS',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=css&theme=light',
+          icon: 'Skills/CSS.svg',
         },
         {
           name: 'Tailwind',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=tailwind&theme=light',
+          icon: 'Skills/TailWind.svg',
         },
       ],
     },
@@ -50,11 +50,11 @@ export class RightColumn {
       items: [
         {
           name: 'Oracle',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=oracle&theme=light',
+          icon: 'Skills/Oracle.svg',
         },
         {
           name: 'Mysql',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=mysql&theme=light',
+          icon: 'Skills/MySQL.svg',
         },
       ],
     },
@@ -63,23 +63,23 @@ export class RightColumn {
       items: [
         {
           name: 'Git',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=git&theme=light',
+          icon: 'Skills/Git.svg',
         },
         {
           name: 'Github',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=github&theme=light',
+          icon: 'Skills/Github.svg',
         },
         {
           name: 'Github Actions',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=githubactions&theme=light',
+          icon: 'Skills/GitHubActions.svg',
         },
         {
           name: 'Gitlab',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=gitlab&theme=light',
+          icon: 'Skills/GitLab.svg',
         },
         {
           name: 'Bitbucket',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=bitbucket&theme=light',
+          icon: 'Skills/BitBucket.svg',
         },
       ],
     },
@@ -88,11 +88,11 @@ export class RightColumn {
       items: [
         {
           name: 'Visual Studio Code',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=vscode&theme=light',
+          icon: 'Skills/VSCode.svg',
         },
         {
           name: 'InteliJIdea',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=idea&theme=light',
+          icon: 'Skills/Idea.svg',
         },
       ],
     },
@@ -101,23 +101,27 @@ export class RightColumn {
       items: [
         {
           name: 'Jira',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=jira&theme=light',
+          icon: 'Skills/Jira.svg',
         },
         {
           name: 'Sonarqube',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=sonarqube&theme=light',
+          icon: 'Skills/SonarQube.svg',
         },
         {
           name: 'Chatgpt',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=chatgpt&theme=light',
+          icon: 'Skills/ChatGPT.svg',
         },
         {
           name: 'Bash',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=bash&theme=light',
+          icon: 'Skills/Bash.svg',
         },
         {
           name: 'Linux',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=linux&theme=light',
+          icon: 'Skills/Linux.svg',
+        },
+        {
+          name: 'Swagger',
+          icon: 'Skills/Swagger.png',
         },
       ],
     },
@@ -126,19 +130,19 @@ export class RightColumn {
       items: [
         {
           name: 'Maven',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=maven&theme=light',
+          icon: 'Skills/Maven.svg',
         },
         {
           name: 'Gradle',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=gradle&theme=light',
+          icon: 'Skills/Gradle.svg',
         },
         {
           name: 'Jenkins',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=jenkins&theme=light',
+          icon: 'Skills/Jenkins.svg',
         },
         {
           name: 'Docker',
-          icon: 'https://go-skill-icons.vercel.app/api/icons?i=docker&theme=light',
+          icon: 'Skills/Docker.svg',
         },
       ],
     },
