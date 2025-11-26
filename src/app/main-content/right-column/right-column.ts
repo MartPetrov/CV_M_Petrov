@@ -18,6 +18,9 @@ export class RightColumn {
         {
           name: 'Spring',
           icon: 'Skills/Spring.svg',
+        },{
+          name: 'Thymeleaf',
+          icon: 'Skills/Thymeleaf.png',
         },
         {
           name: 'Angular',
