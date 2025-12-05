@@ -26,6 +26,10 @@
   width: 1em;
 }
 
+.icon-cloud {
+  width: 3em;
+}
+
 .skill-name,
 .group-title {
   margin: 0;
