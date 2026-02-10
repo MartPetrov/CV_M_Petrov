@@ -112,6 +112,10 @@ export class RightColumn {
           icon: 'Skills/Jira.svg',
         },
         {
+          name: 'Splunk',
+          icon: 'Skills/Splunk.png',
+        },
+        {
           name: 'Sonarqube',
           icon: 'Skills/SonarQube.svg',
         },
