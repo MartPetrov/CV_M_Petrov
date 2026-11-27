@@ -4,7 +4,6 @@
   padding: 40px 20px;
   border-radius: 12px;
   line-height: 1.6;
-  margin: 0 20 0 20;
   padding: 0;
 }
 
@@ -18,8 +17,15 @@ html {
   padding-top: 20px;
   padding-bottom: 50px;
   width: 75%;
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+}
 
+@media (max-width: 768px) {
+  html {
+    width: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 @keyframes gradientAnimation {
   0% {

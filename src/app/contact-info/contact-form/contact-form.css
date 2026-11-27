@@ -77,6 +77,11 @@ button {
   width: 100%;
 }
 
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
 /* Success / error notes */
 .form-note {
   font-size: 0.95rem;
@@ -120,7 +125,7 @@ button {
   } */
 
   /* Notes span full width */
-  /* .form-note{ grid-column: 1 / -1; } */
+  .form-note { grid-column: 1 / -1; }
 }
 
 /* Small accessibility tweak for reduced-motion users */

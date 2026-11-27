@@ -3,6 +3,7 @@
     action="https://api.web3forms.com/submit"
     method="POST"
     class="contact-form component"
+    (submit)="onSubmit($event)"
   >
     <!-- web3forms token & honeypot -->
     <input
@@ -27,14 +28,16 @@
     <label for="message">Message</label>
     <textarea id="message" name="message" rows="6" required></textarea>
 
-    <button type="submit" class="btn">Send</button>
+    <button type="submit" class="btn" [disabled]="status() === 'sending'">
+      {{ status() === 'sending' ? 'Sending...' : 'Send' }}
+    </button>
     <button type="button" class="btn" (click)="onCancel()">Close</button>
 
-    <p class="form-note success" aria-live="polite" hidden>
-      Mail was send! Thanks
+    <p class="form-note success" aria-live="polite" [hidden]="status() !== 'success'">
+      Your message was sent. Thank you!
     </p>
-    <p class="form-note error" aria-live="polite" hidden>
-      Somethings wrong. Please, try again later!
+    <p class="form-note error" aria-live="polite" [hidden]="status() !== 'error'">
+      Something went wrong. Please try again later.
     </p>
   </form>
 </dialog>
