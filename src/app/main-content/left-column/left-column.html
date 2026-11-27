@@ -1,62 +1,34 @@
 <div class="left-column">
-  <div class="work-experience">
-    <h3 class="header-item component center shadow">WORK EXPERIENCE</h3>
-        <div class="work-item">
-      <p class="company center"><strong>PaySafe</strong></p>
-      <p class="text">
-        Building and maintaining backend services for the payments platform.
-        Working on new features, fixing bugs and improving reliability, together
-        with code reviews, automated tests and CI/CD pipelines.
-      </p>
-      <h4 class="role">Junior Software Engineer</h4>
-      <span class="period">02/2026 - Present</span>
-    </div>
+  <details class="work-experience collapsible">
+    <summary class="header-item component center shadow">WORK EXPERIENCE</summary>
+    @for (job of career().work; track job.company) {
     <div class="work-item">
-      <p class="company center"><strong>Amadeus IT Group</strong></p>
-      <p class="text">
-        Investigation of customer cases. Customers report something unexpected
-        and tech support can't answer the question, the tickets come to our team
-        and we investigate. Sometimes it really turns out to be a problem and we
-        create a bug and implement a fix, but sometimes just explain to support
-        what the cause of this behavior is. Most of the time was spent on
-        debugging the code.
-      </p>
-      <h4 class="role">Software Development Engineer</h4>
-      <span class="period">12/2024 - 01/2026</span>
-      <h4 class="role">Associate Software Developer</h4>
-      <span class="period">12/2023 - 12/2024</span>
-      <h4 class="role">Junior Java Developer</h4>
-      <span class="period">03/2023 - 12/2023</span>
-      <h4 class="role">Intern</h4>
-      <span class="period">11/2022 - 03/2023</span>
+      <p class="company center"><strong>{{ job.company }}</strong></p>
+      @if (job.description) {
+      <p class="text">{{ job.description }}</p>
+      }
+      @for (role of job.roles; track role.title) {
+      <h4 class="role">{{ role.title }}</h4>
+      <span class="period">{{ role.period }}</span>
+      }
     </div>
-  </div>
+    }
+  </details>
 
-
-  <div class="education">
-    <h3 class="header-item component center shadow">EDUCATION</h3>
+  <details class="education collapsible">
+    <summary class="header-item component center shadow">EDUCATION</summary>
+    @for (item of career().education; track item.title) {
     <div class="education-item">
-      <h4>Udemy & Code with Mosh courses</h4>
-      <a href="https://udemy.com/" target="_blank"><strong>Udemy</strong></a>
-      <p></p>
-      <a href="https://codewithmosh.com" target="_blank"
-        ><strong>Code with Mosh</strong></a
-      >
-      <p class="period">10/2024 - Present</p>
+      <h4 class="role">{{ item.title }}</h4>
+      @for (link of item.links; track link.name) {
+      @if (link.url) {
+      <a class="school" [href]="link.url" target="_blank"><strong>{{ link.name }}</strong></a>
+      } @else {
+      <span class="school text"><strong>{{ link.name }}</strong></span>
+      }
+      }
+      <p class="period">{{ item.period }}</p>
     </div>
-    <div class="education-item">
-      <h4>Java Web</h4>
-      <a href="https://softuni.bg/" target="_blank"><strong>SoftUni</strong></a>
-      <p class="period">09/2021 - 09/2024</p>
-    </div>
-    <div class="education-item">
-      <h4>Transport Engineering</h4>
-      <a href=" https://uacg.bg/" target="_blank"
-        ><strong
-          >University of Architecture, Civil Engineering and Geodesy</strong
-        ></a
-      >
-      <p class="period">09/2012 - 10/2018</p>
-    </div>
-  </div>
+    }
+  </details>
 </div>

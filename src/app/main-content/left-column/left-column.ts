@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { CareerService } from '../../career/career.service';
 
 @Component({
   selector: 'app-left-column',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './left-column.css',
 })
 export class LeftColumn {
-
+  protected readonly career = inject(CareerService).selected;
 }

@@ -1,26 +1,29 @@
 .right-column {
-  padding-top: 20px;
+  min-width: 0;
+}
+
+.skills-section,
+.certificates,
+.languages {
+  margin-bottom: 20px;
+}
+
+.certificates p,
+.languages p {
+  margin: 5px 0;
+  padding-left: 20px;
 }
 
 .certificates a {
   padding-right: 10px;
 }
 
-.skills-grid{
+.skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(80px, 150px));
-  row-gap: 5px;
-  column-gap: 40px;
-}
-
-@media (max-width: 768px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 16px;
-  }
-  .skill-name {
-    text-wrap: wrap;
-  }
+  grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
+  row-gap: 6px;
+  column-gap: 16px;
+  padding: 8px 20px 12px;
 }
 
 .skill-card {
@@ -41,21 +44,39 @@
 .skill-name,
 .group-title {
   margin: 0;
+}
+
+.group-title {
   text-wrap: nowrap;
 }
 .group-title {
   color: #7ba1c9;
   border-bottom: double 5px #fff;
-  width: 100%;
   padding-bottom: 2px;
+  font-size: 1.05em;
 }
 
 
-.sports{
-  display: fit-content;
-  grid-template-columns: repeat(1, minmax(10px, 90px));
+.sport-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
 }
 
 .sport-items{
   padding-right: 20px;
+}
+
+.icon-fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 4px;
+  background-color: #4185cd;
+  color: #f8fafc;
+  font-size: 0.8em;
+  font-weight: bold;
 }
