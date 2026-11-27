@@ -75,6 +75,10 @@ export const CAREERS: Career[] = [
     work: [
       {
         company: 'PaySafe',
+        description:
+          'Building and maintaining backend services for the payments platform. ' +
+          'Working on new features, fixing bugs and improving reliability, together ' +
+          'with code reviews, automated tests and CI/CD pipelines.',
         roles: [{ title: 'Junior Software Engineer', period: '02/2026 - Present' }],
       },
       {
@@ -84,10 +88,10 @@ export const CAREERS: Career[] = [
           "and tech support can't answer the question, the tickets come to our team " +
           'and we investigate. Sometimes it really turns out to be a problem and we ' +
           'create a bug and implement a fix, but sometimes just explain to support ' +
-          'what the cause of this behavior is. Mainly of the time was spent on ' +
+          'what the cause of this behavior is. Most of the time was spent on ' +
           'debugging the code.',
         roles: [
-          { title: 'Software Development Engineer', period: '12/2024 - Present' },
+          { title: 'Software Development Engineer', period: '12/2024 - 01/2026' },
           { title: 'Associate Software Developer', period: '12/2023 - 12/2024' },
           { title: 'Junior Java Developer', period: '03/2023 - 12/2023' },
           { title: 'Intern', period: '11/2022 - 03/2023' },
@@ -175,11 +179,6 @@ export const CAREERS: Career[] = [
     certificates: {
       text: 'Certificates in Cloud (10/2021 - Present)',
       links: [
-        {
-          title: 'Google Drive',
-          url: 'https://drive.google.com/drive/folders/1wc-Fp55sQIBlDa8tC51AefjmvB7Zduby?usp=drive_link',
-          icon: 'https://skillicons.dev/icons?i=gcp&theme=light',
-        },
         {
           title: 'ICloud',
           url: 'https://www.icloud.com/iclouddrive/02bTdSb9zw4P3g6Ik266t8E0Q#Certificates',
