@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import { LeftColumn } from "./left-column/left-column";
-import { RightColumn } from "./right-column/right-column";
+import { Component, inject } from '@angular/core';
+import { LeftColumn } from './left-column/left-column';
+import { RightColumn } from './right-column/right-column';
+import { CareerService } from '../career/career.service';
 
 @Component({
   selector: 'app-main-content',
@@ -9,5 +10,5 @@ import { RightColumn } from "./right-column/right-column";
   styleUrl: './main-content.css',
 })
 export class MainContent {
-
+  protected readonly careerService = inject(CareerService);
 }

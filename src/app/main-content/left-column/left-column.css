@@ -1,7 +1,5 @@
 .left-column {
-  float: left;
-  width: 45%;
-  padding-top: 20px;
+  min-width: 0;
 }
 
 .education,
@@ -79,4 +77,27 @@ a:hover {
         color: #d8e1ef;
     font-size: small;
     font-style: italic;
+}
+
+.education-item {
+    padding-bottom: 10px;
+}
+
+.education-item .role {
+    margin-top: 10px;
+}
+
+.school {
+    display: block;
+    padding-left: 20px;
+    margin: 4px 0;
+}
+
+.work-item .text {
+    padding-right: 10px;
+}
+
+.work-item span.period {
+    display: block;
+    padding-bottom: 6px;
 }

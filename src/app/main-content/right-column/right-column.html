@@ -1,56 +1,51 @@
 <div class="right-column">
-  <div class="skills-section">
-    <h3 class="header-item component center shadow">SKILLS & TOOLS</h3>
-    @for (group of skills; track group.title) {
+  <details class="skills-section collapsible">
+    <summary class="header-item component center shadow">SKILLS & TOOLS</summary>
+    @for (group of career().skills; track group.title) {
     <h3 class="group-title center">{{ group.title }}</h3>
     <div class="skills-grid">
       @for (skill of group.items; track skill.name) {
       <div class="skill-card">
         <div class="icon-wrapper">
+          @if (skill.icon) {
           <img [src]="skill.icon" [alt]="skill.name" loading="lazy" />
+          } @else {
+          <span class="icon-fallback" aria-hidden="true">{{ skill.name.charAt(0) }}</span>
+          }
         </div>
         <p class="skill-name">{{ skill.name }}</p>
       </div>
       }
     </div>
     }
-  </div>
+  </details>
 
-  <div class="certificates">
-    <h3 class="header-item component center shadow">CERTIFICATES</h3>
-    <p>Certificates in Cloud (10/2021 - Present)</p>
+  @if (career().certificates; as certificates) {
+  <details class="certificates collapsible">
+    <summary class="header-item component center shadow">CERTIFICATES</summary>
+    <p>{{ certificates.text }}</p>
     <p>
-      <a
-        href="https://drive.google.com/drive/folders/1wc-Fp55sQIBlDa8tC51AefjmvB7Zduby?usp=drive_link"
-        target="_blank"
-        ><img class="icon-cloud"
-          src="https://skillicons.dev/icons?i=gcp&theme=light"
-          alt="Google Drive"
-          title="Google Drive"
-        />
-      </a>
-      <a
-        href="https://www.icloud.com/iclouddrive/02bTdSb9zw4P3g6Ik266t8E0Q#Certificates"
-        target="_blank"
-        ><img class="icon-cloud"
-          src="https://skillicons.dev/icons?i=apple&theme=light"
-          alt="ICloud"
-          title="ICloud"
-        />
-      </a>
+      @for (link of certificates.links; track link.url) {
+      <a [href]="link.url" target="_blank"
+        ><img class="icon-cloud" [src]="link.icon" [alt]="link.title" [title]="link.title"
+      /></a>
+      }
     </p>
-  </div>
+  </details>
+  }
 
-  <div class="languages">
-    <h3 class="header-item component center shadow">LANGUAGES</h3>
+  <details class="languages collapsible">
+    <summary class="header-item component center shadow">LANGUAGES</summary>
     <p>Bulgarian - Native or Bilingual Proficiency</p>
     <p>English - Limited Working Proficiency</p>
-  </div>
+  </details>
 
-  <div class="sports">
-    <h3 class="header-item component center shadow">SPORTS</h3>
-     @for (group of sports; track sports) {
-    <span class="center sport-items">{{ group.title }}</span>
-    }
-  </div>
+  <details class="sports collapsible">
+    <summary class="header-item component center shadow">SPORTS</summary>
+    <div class="sport-list">
+      @for (sport of sports; track sport) {
+      <span class="center sport-items">{{ sport }}</span>
+      }
+    </div>
+  </details>
 </div>

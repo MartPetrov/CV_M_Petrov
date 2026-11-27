@@ -1,3 +1,19 @@
-<app-left-column />
-<app-right-column />
+<nav class="career-switch" role="tablist" aria-label="Career direction">
+  @for (career of careerService.careers; track career.id) {
+  <button
+    type="button"
+    role="tab"
+    class="career-tab"
+    [class.active]="career.id === careerService.selectedId()"
+    [attr.aria-selected]="career.id === careerService.selectedId()"
+    (click)="careerService.select(career.id)"
+  >
+    {{ career.label }}
+  </button>
+  }
+</nav>
 
+<div class="columns">
+  <app-left-column />
+  <app-right-column />
+</div>

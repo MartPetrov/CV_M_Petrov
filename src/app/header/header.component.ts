@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { CareerService } from '../career/career.service';
 
 @Component({
   selector: 'app-header',
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  protected readonly career = inject(CareerService).selected;
+}
