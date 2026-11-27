@@ -1,5 +1,15 @@
-
-.main-content {
-    display: flex;
+/* Two columns on wide screens, one column on phones */
+:host {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 10%;
+  align-items: start;
+  /* the host has the .component class: keep the page background showing */
+  background-color: transparent;
 }
 
+@media (max-width: 768px) {
+  :host {
+    grid-template-columns: 1fr;
+  }
+}

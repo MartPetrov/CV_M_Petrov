@@ -1,6 +1,4 @@
 .right-column {
-  float: right;
-  width: 45%;
   padding-top: 20px;
 }
 
@@ -13,6 +11,16 @@
   grid-template-columns: repeat(3, minmax(80px, 150px));
   row-gap: 5px;
   column-gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 16px;
+  }
+  .skill-name {
+    text-wrap: wrap;
+  }
 }
 
 .skill-card {
